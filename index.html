@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informasi Handphone</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    transition: background-image 0.5s ease-in-out;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+  }
+  @keyframes fade-in {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+  }
+  th:first-child, td:first-child {
+    padding-left: 20px;
+  }
+  th:last-child, td:last-child {
+    padding-right: 20px;
+  }
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: 700;
+  }
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  tr:hover {
+    background-color: #f2f2f2;
+  }
+  img {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+  p {
+    margin: 5px 0;
+  }
+  span {
+    font-weight: bold;
+    color: #777;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Lintang Cell</h1>
+  <table>
+    <tr>
+      <th>Gambar</th>
+      <th>Spesifikasi</th>
+      <th>Harga (IDR)</th>
+    </tr>
+    <tr>
+      <td><img src="https://images.samsung.com/is/image/samsung/p6pim/id/galaxy-s21/gallery/id-galaxy-s21-5g-g991-371107-sm-g991bzvdxid-368338116?$330_330_JPG$"></td>
+      <td>
+        <p><span>Merek:</span> Samsung</p>
+        <p><span>Model:</span> Galaxy S21</p>
+        <p><span>RAM:</span> 8 GB</p>
+        <p><span>Storage:</span> 128 GB</p>
+        <p><span>Kamera:</span> 64 MP</p>
+      </td>
+      <td>Rp11.900.000</td>
+    </tr>
+    <tr>
+        <td><img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_12_green_1_4.jpg"></td>
+        <td>
+          <p><span>Merek:</span> Apple</p>
+          <p><span>Model:</span> iPhone 12</p>
+          <p><span>RAM:</span> 4 GB</p>
+          <p><span>Storage:</span> 256 GB</p>
+          <p><span>Kamera:</span> 12 MP</p>
+        </td>
+        <td>Rp14.999.000</td>
+      </tr>
+      <tr>
+        <td><img src="https://i.ebayimg.com/images/g/OQcAAOSwZf9gQ-81/s-l960.jpg"></td>
+        <td>
+          <p><span>Merek:</span> Xiaomi</p>
+          <p><span>Model:</span> Redmi Note 10</p>
+          <p><span>RAM:</span> 6 GB</p>
+          <p><span>Storage:</span> 128 GB</p>
+          <p><span>Kamera:</span> 48 MP</p>
+        </td>
+        <td>Rp3.699.000</td>
+      </tr>
+      <tr>
+        <td><img src="https://images.tokopedia.net/img/cache/700/attachment/2021/7/14/162839454/162839454_e403b0f9-8878-4a6f-84fe-60bc57cf3de9.jpg.webp?ect=4g"></td>
+        <td>
+          <p><span>Merek:</span> OnePlus</p>
+          <p><span>Model:</span> OnePlus 9</p>
+          <p><span>RAM:</span> 12 GB</p>
+          <p><span>Storage:</span> 256 GB</p>
+          <p><span>Kamera:</span> 48 MP</p>
+        </td>
+        <td>Rp10.699.000</td>
+      </tr>
+      <tr>
+        <td><img src="https://storage.googleapis.com/alpine-inkwell-325917.appspot.com/devices/pixel-5-header.png"></td>
+        <td>
+          <p><span>Merek:</span> Google</p>
+          <p><span>Model:</span> Pixel 5</p>
+          <p><span>RAM:</span> 8 GB</p>
+          <p><span>Storage:</span> 128 GB</p>
+          <p><span>Kamera:</span> 12.2 MP</p>
+        </td>
+        <td>Rp13.999.000</td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    const images = [
+      'https://images.bisnis.com/posts/2024/02/28/1740347/harga-iphone-14-terbaru.jpg',
+      'https://cdnpro.eraspace.com/media/wysiwyg/artikel/Tahun_2023/Maret/livewallpaper-2.jpg',
+      'https://i0.wp.com/www.pcplus.co.id/wp-content/uploads/2020/05/Aplikasi-Wallpaper.jpg?fit=1308%2C887&ssl=1',
+      'https://static.vecteezy.com/system/resources/previews/000/523/535/original/5g-internet-technology-background-next-generation-of-mobile-network-and-digital-data-connected-with-smartphone-on-blue-background-vector.jpg'
+    ];
+    let currentIndex = 0;
+
+    function changeBackgroundImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
+    }
+
+    setInterval(changeBackgroundImage, 5000); // Change image every 5 seconds
+    document.body.style.backgroundImage = `url('${images[0]}')`; // Set initial background image
+  </script>
+</body>
+</html>
